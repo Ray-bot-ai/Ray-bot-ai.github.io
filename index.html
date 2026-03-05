@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的公开日记 | My Public Diary</title>
+    <meta name="description" content="一个极简风格的个人公开日记空间">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="site-title">我的公开日记</h1>
+            <p class="site-subtitle">记录生活，分享思考</p>
+        </header>
+
+        <main class="diary-list" id="diaryList">
+            <!-- 日记条目将通过 JavaScript 动态加载 -->
+            <div class="loading">
+                <span class="loading-spinner"></span>
+                <p>正在加载日记...</p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> 我的公开日记</p>
+            <p class="footer-hint">通过 GitHub Pages 托管</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
